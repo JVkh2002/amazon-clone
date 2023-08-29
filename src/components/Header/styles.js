@@ -6,18 +6,25 @@ export const Container = styled.div`
     height: 3.5rem;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
 
     align-items: center;
 
-    img {
-        margin-left: 0.7rem;
+    .image {
+        padding: 1.5px; 
         cursor: pointer;  
     }
 
-    #address {
-        margin-left: 1rem;
-        cursor: pointer;
+    .pin {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         padding: 0.48rem;
+    }
+
+    #address {
+        cursor: pointer;
+        margin-left: 0.3rem;
     }
 
     p {
@@ -29,16 +36,15 @@ export const Container = styled.div`
         font-size: 12px;
     }
 
-    #search {
-        margin-left: 1.9rem; 
-    }
 
     #search > button {
-        padding: 0.8rem;
+        padding: 0.78rem 0.4rem;
         border-top-left-radius: 0.4rem;
         border-bottom-left-radius: 0.4rem;
         border-style: none;
         cursor: pointer;
+        position: relative;
+        top: 1px;
     }
 
     #search > input {
@@ -49,18 +55,21 @@ export const Container = styled.div`
 
     #search > #search-button {
         background-color: #F3A847;
-        padding: 0.8rem;
+        padding: 0.41rem;
         width: 2.5rem;
-        border-top-right-radius: 0.4rem;;
+        border-top-right-radius: 0.4rem;
         border-bottom-right-radius: 0.4rem;
         border-top-left-radius: 0;
         border-bottom-left-radius: 0rem;
         border-style: none;
         cursor: pointer;
+
+        position: relative;
+        top: 7px;
     }
 
     #your-account{
-        margin-left: 1.8rem;
+        
         cursor: pointer;
         padding: 0.38rem;
     }
@@ -70,8 +79,7 @@ export const Container = styled.div`
     }
 
     #return{
-        margin-left: 1.8rem;
-        margin-right: 1rem;
+        
         cursor: pointer;
         padding: 0.4rem 0rem;
     }
@@ -80,8 +88,8 @@ export const Container = styled.div`
         font-size: 12px;
     }
 
-    img:hover , #address:hover, search:hover, #your-account:hover, #return:hover {
-        border: solid 1px white;
+    .image:hover , .pin:hover, search:hover, #your-account:hover, #return:hover {
+        box-shadow: inset 0 0 0 1px white;
     }
     
 `
@@ -90,4 +98,38 @@ export const UnderContainer = styled.div`
     background-color: #232F3E;
     width: 100%;
     height: 2.4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    p {
+        color: white;
+        padding: 0.55rem;
+    }
+
+    p:hover, div:hover {
+        box-shadow: inset 0 0 0 1px white;
+        cursor: pointer;
+    }
+
+    #menu:hover {
+        box-shadow: inset 0 0 0 1px transparent;
+    }
+
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0rem 0.35rem;
+    }
+
+    div > p {
+        margin-left: 4px;
+    }
+
+
+
+
 `
