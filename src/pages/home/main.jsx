@@ -1,6 +1,8 @@
 import { Header } from "../../components/Header";
-import banner from "../../assets/menu-banner.jpg";
 import { SmallBox } from "../../components/small-box";
+import { SmallBox2 } from "../../components/small-box-2";
+import { LongBox } from "../../components/long-box";
+import { Poster } from "../../components/Poster";
 import { Background } from "./styles"
 
 const Home = () => {
@@ -8,13 +10,27 @@ const Home = () => {
         <>
         <Header />
         <Background>
-            <SmallBox type = {1} />
-            <SmallBox type = {2}/>
-            <SmallBox type = {1} />
-            <SmallBox type = {1} />
-            
+            <SmallBox />
+            <SmallBox />
+            <SmallBox />
+            <SmallBox />
+        </Background> 
 
-        </Background>
+        <Poster/>
+        <SmallBox2/>
+        <SmallBox2 type={2}/>
+
+        <LongBox/>
+
+        <SmallBox2 type={2}/>
+        <SmallBox2/>
+        <SmallBox2/>
+        <SmallBox2/>
+
+        
+        
+
+        
         </>
     )
 }

@@ -8,8 +8,23 @@ import { BiSearch } from 'react-icons/bi'
 import { RiArrowDownSFill } from 'react-icons/ri'
 
 const Header = () => {
+
+    const lista = document.getElementById("lista");
+
+    const showList = () => {
+        console.log("funcionou")
+
+        if (lista.style.display === "none" || lista.style.display === "") {
+            lista.style.display = "block"; // Mostra a lista
+        } else {
+            lista.style.display = "none"; // Oculta a lista
+        }
+    }
+
     return (
         <>
+
+
         <Container>
             <div className="image">
                 <img src={logo} alt="Amazon logo"/>
@@ -24,7 +39,14 @@ const Header = () => {
             </div>
 
             <div id="search">
-                <button>Todos<RiArrowDownSFill/></button>
+                <button id="listButton" onClick={showList}>Todos<RiArrowDownSFill/>
+                    <ul id="lista" >
+                        <li>alo</li>
+                        <li>afa</li>
+                        <li>ga</li>
+                        <li>aga</li>
+                    </ul>    
+                </button>
                 <input placeholder="Pesquisa Amazon.com.br"></input>
                 <button id="search-button"><BiSearch size={25}/></button>
             </div>
@@ -61,7 +83,11 @@ const Header = () => {
             <p>Eletrônicos</p>
 
         </UnderContainer>
+
+        
         </>
+
+        
             
     )
 }

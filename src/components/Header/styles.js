@@ -47,6 +47,10 @@ export const Container = styled.div`
         top: 1px;
     }
 
+    #lista {
+        display: none;
+    }
+
     #search > input {
         padding: 0.8rem;
         width: 31rem;
