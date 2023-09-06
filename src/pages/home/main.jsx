@@ -6,6 +6,8 @@ import { Poster } from "../../components/Poster";
 import { Background } from "./styles"
 
 const Home = () => {
+
+
     return (
         <>
         <Header />

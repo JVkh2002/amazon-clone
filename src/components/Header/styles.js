@@ -47,8 +47,32 @@ export const Container = styled.div`
         top: 1px;
     }
 
+    #search > button:hover {
+        filter: brightness(0.8);
+    }
+
     #lista {
-        display: none;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        text-align: justify;
+
+        position: absolute;
+        top: 2.2rem;
+        left: 0.2rem;
+        width: 15rem;
+
+        list-style: none;
+    }
+
+    #lista > li {
+        padding: 0.1rem;
+    }
+
+    #lista > li:hover {
+        background-color: #1E90FF;
+
     }
 
     #search > input {
@@ -76,6 +100,37 @@ export const Container = styled.div`
         
         cursor: pointer;
         padding: 0.38rem;
+    }
+
+    #yourListMenu {
+        background-color: white;
+
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 13rem;
+        
+        list-style: none;
+        width: 25rem;
+
+
+    }
+
+    #yourListMenu-right {
+        border-left: solid 1px #9A9A9A;
+        margin-left: 1rem;
+    }
+
+    #yourListMenu > ul > h3 {
+        margin-left: 1.5rem;
+        width: 11rem;
+        margin-top: 0.8rem;
+    }
+
+    #yourListMenu > ul > li {
+        margin: 0.5rem 0;
+        margin-left: 1.5rem;
+        list-style: none;
     }
 
     #your-account > #hello {
