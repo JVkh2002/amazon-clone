@@ -27,6 +27,98 @@ export const Container = styled.div`
         margin-left: 0.3rem;
     }
 
+    #ChooseLocation {
+        width: 24rem;
+        height: 19rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 8rem;
+        left: 31.5rem;
+        z-index: 1;
+        background-color: white;
+        border-radius: 10px;      
+    }
+
+    #ChooseLocation > h4 {
+        background-color: #F0F2F2;
+        justify-content: start;
+        align-items: center;
+        display: flex;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    #ChooseLocation > p {
+        color: gray;
+        font-size: 14px;
+        display: flex;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px 10px 0 0;
+        width: 22rem;  
+    }
+
+    #ChooseLocation > hr {
+        margin-top: 0.5rem
+    }
+
+    #ChooseLocation > #insira {
+        width: 10rem;
+        display: flex;
+        position: relative;
+        top: 1rem;
+        z-index: 1;
+        background-color: white;
+        padding: 0 0.5rem;
+        margin: 0 auto;
+    }
+
+    #ChooseLocation > a {
+        color: #007185;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    #ChooseLocation > form {
+        margin: 1rem auto 0 auto;
+    }
+
+    #ChooseLocation > form > input {
+        width: 4rem;
+        display: inline-block;
+        padding: 0.2rem;
+    }
+
+    #ChooseLocation > form > button {
+        padding: 0.3rem 1rem 0.3rem 1rem;
+        margin-left: 0.5rem;
+        background-color: white;
+        border: 1px solid gray;
+        border-radius: 6px;
+    }
+
+    #currentLocation{
+        margin-top: 0.7rem;
+        margin-left: 1rem;
+        background-color: #F7FAFA;
+        border: solid 4px #007185;
+        border-radius: 8px;
+        width: 20.7rem;
+        padding: 0.5rem;
+        
+    }
+
+    #currentLocation > p {
+        color: black;
+    }
+
+    #currentLocation > p {
+        color: black;
+        margin-top: 0.3rem;
+    }
+
+
     p {
         color: white;
     }
@@ -47,8 +139,8 @@ export const Container = styled.div`
         top: 1px;
     }
 
-    #search > button:hover {
-        filter: brightness(0.8);
+    #search > #listButton:hover {
+        background-color: #D4D4D4;
     }
 
     #lista {
@@ -64,6 +156,10 @@ export const Container = styled.div`
         width: 15rem;
 
         list-style: none;
+        z-index: 1;
+
+        overflow-y: auto;
+        max-height: 365px;
     }
 
     #lista > li {
@@ -104,33 +200,32 @@ export const Container = styled.div`
 
     #yourListMenu {
         background-color: white;
-
         display: flex;
         flex-direction: row;
         position: absolute;
-        right: 13rem;
-        
+        right: 5rem;
+        top: 3.5rem;
         list-style: none;
-        width: 25rem;
+        width: 30rem;
+        z-index: 1;
+        padding: 0.7rem;
 
-
-    }
-
-    #yourListMenu-right {
-        border-left: solid 1px #9A9A9A;
-        margin-left: 1rem;
     }
 
     #yourListMenu > ul > h3 {
         margin-left: 1.5rem;
         width: 11rem;
-        margin-top: 0.8rem;
     }
 
     #yourListMenu > ul > li {
         margin: 0.5rem 0;
         margin-left: 1.5rem;
         list-style: none;
+    }
+
+    #yourListMenu-right {
+        border-left: 1px solid lightgray;
+        margin-left: 1rem;
     }
 
     #your-account > #hello {

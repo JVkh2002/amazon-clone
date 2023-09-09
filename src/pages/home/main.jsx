@@ -4,14 +4,18 @@ import { SmallBox2 } from "../../components/small-box-2";
 import { LongBox } from "../../components/long-box";
 import { Poster } from "../../components/Poster";
 import { Background } from "./styles"
+import React, {useState} from "react"
 
 const Home = () => {
+
+    const [filter, setFilter] = useState(false);
+    console.log("filtro: ", filter)
 
 
     return (
         <>
-        <Header />
-        <Background>
+        <Header filtro={setFilter}/>
+        <Background filter={filter}>
             <SmallBox />
             <SmallBox />
             <SmallBox />
@@ -27,12 +31,8 @@ const Home = () => {
         <SmallBox2 type={2}/>
         <SmallBox2/>
         <SmallBox2/>
-        <SmallBox2/>
-
-        
-        
-
-        
+        <SmallBox2/> 
+   
         </>
     )
 }

@@ -10,7 +10,9 @@ export const Background = styled.div`
 
     display: flex;
     flex-direction: row;
+    filter: ${props => (props.filter ?  "brightness(0.4)" : "brightness(1)")};
     
   
 `
+
 
