@@ -1,4 +1,6 @@
 import React, {useState, useRef, useEffect} from "react"
+import { useNavigate } from "react-router-dom";
+
 import { Container, UnderContainer } from './styles';
 import logo from '../../assets/logo-amazon.png'
 import car from '../../assets/return-image.png'
@@ -9,6 +11,15 @@ import { RiArrowDownSFill } from 'react-icons/ri'
 
 const Header = ({filtro}) => {
 
+    const navigate = useNavigate();
+
+    const handleClickYourAccount = () => {
+        navigate('/yourAccount')
+    }
+
+    const handleClickHome = () => {
+        navigate('/')
+    }
 
     const [sectionMenu, setSectionMenu] = useState(false);
 
@@ -82,7 +93,7 @@ const Header = ({filtro}) => {
     return (
         <>
         <Container>
-            <div className="image">
+            <div className="image" onClick={handleClickHome}>
                 <img src={logo} alt="Amazon logo"/>
             </div>
             
@@ -169,7 +180,7 @@ const Header = ({filtro}) => {
                 <button id="search-button"><BiSearch size={25}/></button>
             </div>
 
-            <div id="your-account" onMouseOver={showYourListMenu} onMouseOut={closeYourListMenu}>
+            <div id="your-account" onMouseOver={showYourListMenu} onMouseOut={closeYourListMenu} onClick={handleClickYourAccount}>
                 <p id="hello">Olá, joão</p>
                 <p>Contas e Listas</p>
                 

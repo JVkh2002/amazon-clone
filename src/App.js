@@ -1,6 +1,12 @@
 //import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
-import { Home } from './pages/home/main'
+import { Home } from './pages/home/index'
+import { YourAccount } from './pages/yourAccount/index'
 
 
 
@@ -8,7 +14,12 @@ import { Home } from './pages/home/main'
 
 function App() {
   return (
-    <Home />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/yourAccount" element={<YourAccount />} />
+      </Routes>
+    </Router>
   );
 }
 
