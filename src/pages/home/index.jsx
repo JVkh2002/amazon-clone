@@ -5,6 +5,7 @@ import { SmallBox } from "../../components/small-box";
 import { SmallBox2 } from "../../components/small-box-2";
 import { LongBox } from "../../components/long-box";
 import { Poster } from "../../components/Poster";
+import { Footer } from "../../components/Footer";
 import { Background } from "./styles"
 
 
@@ -69,6 +70,7 @@ const Home = () => {
         <SmallBox2/>
         <SmallBox2/>
         <SmallBox2/> 
+
    
         </>
     )
