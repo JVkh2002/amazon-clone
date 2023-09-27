@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container } from './styles'
-import livro1 from '../../assets/livro1.jpg'
-import livro2 from '../../assets/livro2.jpg'
-import livro3 from '../../assets/livro3.jpg'
-import livro4 from '../../assets/livro4.jpg'
-import livro5 from '../../assets/livro5.jpg'
-import livro6 from '../../assets/livro6.jpg'
-import livro7 from '../../assets/livro7.jpg'
-import livro8 from '../../assets/livro8.jpg'
+import livro1 from '../../../assets/livro1.jpg'
+import livro2 from '../../../assets/livro2.jpg'
+import livro3 from '../../../assets/livro3.jpg'
+import livro4 from '../../../assets/livro4.jpg'
+import livro5 from '../../../assets/livro5.jpg'
+import livro6 from '../../../assets/livro6.jpg'
+import livro7 from '../../../assets/livro7.jpg'
+import livro8 from '../../../assets/livro8.jpg'
 
 const LongBox = () => {
     return (

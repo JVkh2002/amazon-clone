@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container } from './styles'
-import seusPedidos from '../../assets/seus_pedidos.png'
+import seusPedidos from '../../../assets/seus_pedidos.png'
 
 const YourAccountBox = () => {
 
     return (
         <Container>
-            <img src={seusPedidos}></img>
+            <img src={seusPedidos} alt="seus pedidos"></img>
             
             <div>
                 <h3>Seus Pedidos</h3>

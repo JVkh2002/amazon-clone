@@ -204,7 +204,7 @@ export const Container = styled.div`
         flex-direction: row;
         position: absolute;
         right: 5rem;
-        top: 3.5rem;
+        top: 3.2rem;
         list-style: none;
         width: 30rem;
         z-index: 1;
@@ -222,6 +222,13 @@ export const Container = styled.div`
         margin-left: 1.5rem;
         list-style: none;
     }
+
+    #yourListMenu > ul > li:hover {
+        text-decoration: underline;
+        color: #ECA25A;
+    }
+    
+
 
     #yourListMenu-right {
         border-left: 1px solid lightgray;

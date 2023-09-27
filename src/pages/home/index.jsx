@@ -1,12 +1,12 @@
 import React, {useState} from "react"
 
 import { Header } from "../../components/Header";
-import { SmallBox } from "../../components/small-box";
-import { SmallBox2 } from "../../components/small-box-2";
-import { LongBox } from "../../components/long-box";
-import { Poster } from "../../components/Poster";
+import { SmallBox } from "../../components/Home/small-box";
+import { SmallBox2 } from "../../components/Home/small-box-2";
+import { LongBox } from "../../components/Home/long-box";
+import { Poster } from "../../components/Home/Poster";
 import { Footer } from "../../components/Footer";
-import { Background } from "./styles"
+import { Background, Container} from "./styles"
 
 
 const Home = () => {
@@ -50,28 +50,32 @@ const Home = () => {
 
     return (
         <>
-        <Header filtro={setFilter}/>
-        <Background filter={filter} banner={banner}>
-            <div id="arrow" onClick={returnBanner} > </div>
-            <div id="arrow2" onClick={nextBanner} > </div>
-            <SmallBox />
-            <SmallBox />
-            <SmallBox />
-            <SmallBox />
-        </Background> 
 
-        <Poster/>
-        <SmallBox2/>
-        <SmallBox2 type={2}/>
+            <Header filtro={setFilter}/>
+            <Background filter={filter} banner={banner}>
+                <div id="arrow" onClick={returnBanner} > </div>
+                <div id="arrow2" onClick={nextBanner} > </div>
+                <SmallBox />
+                <SmallBox />
+                <SmallBox />
+                <SmallBox />
+            </Background> 
+    
+            <Poster/>
+            <SmallBox2/>
+            <SmallBox2 type={2}/>
+    
+            <LongBox/>
+    
+            <SmallBox2 type={2}/>
+            <SmallBox2/>
+            <SmallBox2/>
+            <SmallBox2/> 
+    
 
-        <LongBox/>
-
-        <SmallBox2 type={2}/>
-        <SmallBox2/>
-        <SmallBox2/>
-        <SmallBox2/> 
-
-   
+        <Container>
+            <Footer />
+        </Container>
         </>
     )
 }

@@ -65,4 +65,10 @@ export const Background = styled.div`
   
 `
 
+export const Container = styled.div`
+
+    top: 7rem;
+    position: relative;
+`
+
 

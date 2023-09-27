@@ -1,13 +1,13 @@
 import React from 'react';
-import kindle1 from '../../assets/kindle1.jpg'
-import kindle2 from '../../assets/kindle2.jpg'
-import kindle3 from '../../assets/kindle3.jpg'
+import kindle1 from '../../../assets/kindle1.jpg'
+import kindle2 from '../../../assets/kindle2.jpg'
+import kindle3 from '../../../assets/kindle3.jpg'
 import { Box, Container } from './styles'
-import card from '../../assets/credit-card.jpg'
+import card from '../../../assets/credit-card.jpg'
 
 const SmallBox2 = ({type}) => {
     
-    if (type == 2) {
+    if (type === 2) {
         return (
             <Container>
                 <Box>
@@ -35,7 +35,7 @@ const SmallBox2 = ({type}) => {
                             </div>
     
                         </div>
-                    <a href='#'>Peça já seu cartão</a>
+                    <a href='h2'>Peça já seu cartão</a>
                 </Box>
             </Container>
          )
@@ -47,7 +47,7 @@ const SmallBox2 = ({type}) => {
                 <Box>
                     <h2>Chegou o novo cartão Amazon seu anuidade</h2>
                     <img src={card} alt='credit card'/>
-                    <a href='#'>Peça já seu cartão</a>
+                    <a href='h2'>Peça já seu cartão</a>
                 </Box>
             </Container> 
         )

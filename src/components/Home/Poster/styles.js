@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import poster from '../../assets/Poster.jpeg'
+import poster from '../../../assets/Poster.jpeg'
 
 export const Box = styled.div`
     display: inline-block;
