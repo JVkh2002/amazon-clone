@@ -155,8 +155,6 @@ const SideBar = () => {
             
         </Container>
         
-        
-        <Footer />
         </>
     )
 
